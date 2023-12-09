@@ -13,7 +13,30 @@
   </head>
   <body>
     <header class="header">
-      <ul class="header-nav">
+      <div class="header-container">
+        <div class="logo">< Frontend Developer /></div>
+        <div class="burger-menu">
+          <div class="burger-icon" id="burger-icon">&#9776;</div>
+        </div>
+        <ul class="header-nav">
+          <li class="header-nav__item">
+            <a class="link-in-nav" href="#about-me">Обо мне</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="link-in-nav" href="#skills">Навыки</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="link-in-nav" href="#projects">Мои проекты</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="link-in-nav" href="#contact">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <ul class="nav-list">
         <li class="header-nav__item">
           <a class="link-in-nav" href="#about-me">Обо мне</a>
         </li>
@@ -27,278 +50,308 @@
           <a class="link-in-nav" href="#contact">Контакты</a>
         </li>
       </ul>
-    </header>
-    <main class="main-container">
-      <section id="about-me">
-        <h2 class="title-in-section">Обо мне</h2>
-        <div class="text-in-section">
-          Привет! Меня зовут Артур, я фронтенд разработчик с опытом работы в
-          создании современных и отзывчивых веб-приложений. Стремлюсь создавать
-          веб-приложения, которые предоставляют отличный пользовательский опыт.
-          Умею переводить дизайнерские концепции в эффективный и красочный код.
-          Опыт работы с различными фреймворками, такими как React и Vue,
-          позволяет мне быстро адаптироваться к новым технологиям
-        </div>
-      </section>
+    </div>
 
-      <section id="skills">
-        <h2 class="title-in-section">Навыки</h2>
-        <div class="list-of-scills">
-          <div class="skill">
-            <img
-              style="width: 50px"
-              src="images/logo_html.png"
-              alt="logo_html"
-            />
-            HTML5
-          </div>
-          <div class="skill">
-            <img style="width: 50px" src="images/logo-css.png" alt="logo_css" />
-            <img
-              style="width: 50px"
-              src="images/logo-scss.png"
-              alt="logo_scss"
-            />CSS3 / SCSS
-          </div>
-          <div class="skill">
-            <img
-              style="width: 50px"
-              src="images/logo-js.png"
-              alt="logo_js"
-            />JavaScript (ES6+)
-          </div>
-          <div class="skill">
-            <img
-              style="width: 50px"
-              src="images/typescript.svg"
-              alt="logo_ts"
-            />TypeScript
-          </div>
-          <div class="skill">
-            <img
-              style="width: 50px"
-              src="images/logo-react2.png"
-              alt="logo_react"
-            />React.js
-          </div>
-          <div class="skill">
-            <img
-              style="width: 50px"
-              src="images/logo-vue.png"
-              alt="logo_vue"
-            />Vue.js
-          </div>
-          <div class="skill">
-            <img
-              style="width: 50px"
-              src="images/logo-mui.png"
-              alt="logo_mui"
-            />Material UI
-          </div>
-          <div class="skill">
-            <img
-              style="width: 50px"
-              src="images/logo-git.png"
-              alt="logo_git"
-            />GIT Flow
-          </div>
-          <div class="skill">
-            <img
-              style="width: 50px"
-              src="images/app-icon-jira.png"
-              alt="logo_jira"
-            />Jira
-          </div>
-        </div>
-      </section>
-
-      <section id="projects">
-        <h2 class="title-in-section">Проекты</h2>
-        <div class="container">
-          <div class="slider">
-            <div class="box1 box">
-              <div class="bg"></div>
-              <div class="details">
-                <h1>Книжный магазин с подключением к API Google Books</h1>
-                <p>
-                  Главная страница сверстана по макету из <strong>Figma</strong>
-                </p>
-                <p>
-                  Подключено <strong>Google Books API</strong>, чтобы данные
-                  загружались с сервера
-                </p>
-                <p>Создан автоматический <strong>слайдер</strong></p>
-                <p>
-                  Кнопки авторизации, поиска и корзины неактивны. Однако при
-                  добавлении товара в корзину у иконки появляется бейджик с
-                  количеством товара в корзине
-                </p>
-                <p>
-                  При прокрутке сайта шапка остается закреплённой в верхней
-                  части экрана
-                </p>
-              </div>
-              <div class="container-for-img">
-                <img class="illustration" src="images/book-shop.png" alt="" />
-                <div class="inner"></div>
-              </div>
+    <main>
+      <div>
+        <div class="about-me">
+          <section id="about-me" class="main-container">
+            <h2 class="title-in-section title-about-me">
+              Привет! Меня зовут Артур
+            </h2>
+            <h3>Я - фронтенд-разработчик</h3>
+            <div class="text-in-section">
+              Привет! Меня зовут Артур, я фронтенд разработчик с опытом работы в
+              создании современных и отзывчивых веб-приложений. Стремлюсь
+              создавать веб-приложения, которые предоставляют отличный
+              пользовательский опыт. Умею переводить дизайнерские концепции в
+              эффективный и красочный код. Опыт работы с различными
+              фреймворками, такими как React и Vue, позволяет мне быстро
+              адаптироваться к новым технологиям
             </div>
+          </section>
+        </div>
 
-            <div class="box2 box">
-              <div class="bg"></div>
-              <div class="details">
-                <h1>Канбан-доска</h1>
-                <p>Проект на <strong>React</strong></p>
-                <p>
-                  Главная страница сверстана по макету из Figma. Канбан-доска
-                  имеет 4 блока с задачами:Backlog, Ready, In progress, Finished
-                </p>
-                <p>
-                  Первоначально каждая задача всегда размещается в Backlog — для
-                  анализа. При клике на кнопку «+ Add card» в карточке Backlog
-                  появляется поле ввода в конце списка, между последней задачей
-                  и кнопкой. При этом кнопка «+ Add card» меняется на «Submit»
-                </p>
-                <p>Осуществлено перемещение задач между списками</p>
-                <p>
-                  Осуществлена возможность перехода на отдельную страницу
-                  какой-либо задачи в списке при клике на её заголовок
-                </p>
-              </div>
-              <div class="container-for-img">
-                <img class="illustration" src="images/kanban.png" alt="" />
-                <div class="inner"></div>
-              </div>
-            </div>
-
-            <div class="box3 box">
-              <div class="bg"></div>
-              <div class="details">
-                <h1>Сервис СКАН</h1>
-                <p>Проект на <strong>React</strong></p>
-                <p>Верстка по макету из Figma.</p>
-                <p>
-                  Компания СКАН разработала новый API для поиска публикаций о
-                  компании (юридическом лице) в средствах массовой информации по
-                  его ИНН.
-                </p>
-                <p>Подключение к REST API через GET, POST запросы</p>
-                <p>Авторизация пользователя по логину и паролю</p>
-                <p>Форма для регистрации проходит валидацию</p>
-                <p>Поиск информации осуществляется по ИНН компании</p>
-                <p>
-                  В отчете выводится информация о периоде и количестве
-                  публикаций в СМИ (есть возможность выбора только негативных
-                  публикаций)
-                </p>
-              </div>
-              <div class="container-for-img">
+        <div class="skills">
+          <section id="skills" class="main-container">
+            <h2 class="title-in-skill">Навыки</h2>
+            <div class="list-of-scills">
+              <div class="skill">
                 <img
-                  class="illustration"
-                  src="images/FR_final_2_4.png"
-                  alt=""
+                  style="width: 50px"
+                  src="images/logo_html.png"
+                  alt="logo_html"
                 />
-                <div class="inner"></div>
+                HTML5
               </div>
-            </div>
-
-            <div class="box4 box">
-              <div class="bg"></div>
-              <div class="details">
-                <h1>Редактируемый список сотрудников</h1>
-                <p>Проект на <strong>Vue</strong></p>
-                <p>
-                  Позволяет создавать, добавлять, редактировать список
-                  сотрудников
-                </p>
-                <p>
-                  При добавлении данных о сотруднике форма проверяет
-                  правильность введенных данных (обязательны имя и фамилия, стаж
-                  не должен быть больше возраста сотрудника)
-                </p>
-              </div>
-
-              <div class="container-for-img">
+              <div class="skill">
                 <img
-                  class="illustration"
-                  src="images/employers-list.png"
-                  alt=""
+                  style="width: 50px"
+                  src="images/logo-css.png"
+                  alt="logo_css"
                 />
-                <div class="inner"></div>
+                <img
+                  style="width: 50px"
+                  src="images/logo-scss.png"
+                  alt="logo_scss"
+                />CSS3 / SCSS
+              </div>
+              <div class="skill">
+                <img
+                  style="width: 50px"
+                  src="images/logo-js.png"
+                  alt="logo_js"
+                />JavaScript (ES6+)
+              </div>
+              <div class="skill">
+                <img
+                  style="width: 50px"
+                  src="images/typescript.svg"
+                  alt="logo_ts"
+                />TypeScript
+              </div>
+              <div class="skill">
+                <img
+                  style="width: 50px"
+                  src="images/logo-react2.png"
+                  alt="logo_react"
+                />React.js
+              </div>
+              <div class="skill">
+                <img
+                  style="width: 50px"
+                  src="images/logo-vue.png"
+                  alt="logo_vue"
+                />Vue.js
+              </div>
+              <div class="skill">
+                <img
+                  style="width: 50px"
+                  src="images/logo-mui.png"
+                  alt="logo_mui"
+                />Material UI
+              </div>
+              <div class="skill">
+                <img
+                  style="width: 50px"
+                  src="images/logo-git.png"
+                  alt="logo_git"
+                />GIT Flow
+              </div>
+              <div class="skill">
+                <img
+                  style="width: 50px"
+                  src="images/app-icon-jira.png"
+                  alt="logo_jira"
+                />Jira
               </div>
             </div>
+          </section>
+        </div>
 
-            <div class="box5 box">
-              <div class="bg"></div>
-              <div class="details">
-                <h1>
-                  Коммерческая разработка - сервис по покупке и продаже
-                  криптовалюты SkyLine
-                </h1>
-                <p>Проект на <strong>React</strong></p>
-                <p>Верстка по макету Figma с использованием Material UI</p>
-                <p>Резиновая и адаптивная верстка</p>
-                <p>Контролируемые формы</p>
-                <p>Кастомизированные хуки</p>
-                <p>Создание запросов GET, POST на сервер REST API</p>
-                <p>Проверка заполнения формы для регистрации и авторизации</p>
+        <div class="skills">
+          <section id="projects" class="slider-container">
+            <h2 class="title-in-skill">Проекты</h2>
+            <div class="container">
+              <div class="slider">
+                <div class="box1 box">
+                  <div class="bg"></div>
+                  <div class="details">
+                    <h1>Книжный магазин с подключением к API Google Books</h1>
+                    <p>
+                      Главная страница сверстана по макету из
+                      <strong>Figma</strong>
+                    </p>
+                    <p>
+                      Подключено <strong>Google Books API</strong>, чтобы данные
+                      загружались с сервера
+                    </p>
+                    <p>Создан автоматический <strong>слайдер</strong></p>
+                    <p>
+                      Кнопки авторизации, поиска и корзины неактивны. Однако при
+                      добавлении товара в корзину у иконки появляется бейджик с
+                      количеством товара в корзине
+                    </p>
+                    <p>
+                      При прокрутке сайта шапка остается закреплённой в верхней
+                      части экрана
+                    </p>
+                  </div>
+                  <div class="container-for-img">
+                    <img
+                      class="illustration"
+                      src="images/book-shop.png"
+                      alt=""
+                    />
+                    <div class="inner"></div>
+                  </div>
+                </div>
+
+                <div class="box2 box">
+                  <div class="bg"></div>
+                  <div class="details">
+                    <h1>Канбан-доска</h1>
+                    <p>Проект на <strong>React</strong></p>
+                    <p>
+                      Главная страница сверстана по макету из Figma.
+                      Канбан-доска имеет 4 блока с задачами:Backlog, Ready, In
+                      progress, Finished
+                    </p>
+                    <p>
+                      Первоначально каждая задача всегда размещается в Backlog —
+                      для анализа. При клике на кнопку «+ Add card» в карточке
+                      Backlog появляется поле ввода в конце списка, между
+                      последней задачей и кнопкой. При этом кнопка «+ Add card»
+                      меняется на «Submit»
+                    </p>
+                    <p>Осуществлено перемещение задач между списками</p>
+                    <p>
+                      Осуществлена возможность перехода на отдельную страницу
+                      какой-либо задачи в списке при клике на её заголовок
+                    </p>
+                  </div>
+                  <div class="container-for-img">
+                    <img class="illustration" src="images/kanban.png" alt="" />
+                    <div class="inner"></div>
+                  </div>
+                </div>
+
+                <div class="box3 box">
+                  <div class="bg"></div>
+                  <div class="details">
+                    <h1>Сервис СКАН</h1>
+                    <p>Проект на <strong>React</strong></p>
+                    <p>Верстка по макету из Figma.</p>
+                    <p>
+                      Компания СКАН разработала новый API для поиска публикаций
+                      о компании (юридическом лице) в средствах массовой
+                      информации по его ИНН.
+                    </p>
+                    <p>Подключение к REST API через GET, POST запросы</p>
+                    <p>Авторизация пользователя по логину и паролю</p>
+                    <p>Форма для регистрации проходит валидацию</p>
+                    <p>Поиск информации осуществляется по ИНН компании</p>
+                    <p>
+                      В отчете выводится информация о периоде и количестве
+                      публикаций в СМИ (есть возможность выбора только
+                      негативных публикаций)
+                    </p>
+                  </div>
+                  <div class="container-for-img">
+                    <img
+                      class="illustration"
+                      src="images/FR_final_2_4.png"
+                      alt=""
+                    />
+                    <div class="inner"></div>
+                  </div>
+                </div>
+
+                <div class="box4 box">
+                  <div class="bg"></div>
+                  <div class="details">
+                    <h1>Редактируемый список сотрудников</h1>
+                    <p>Проект на <strong>Vue</strong></p>
+                    <p>
+                      Позволяет создавать, добавлять, редактировать список
+                      сотрудников
+                    </p>
+                    <p>
+                      При добавлении данных о сотруднике форма проверяет
+                      правильность введенных данных (обязательны имя и фамилия,
+                      стаж не должен быть больше возраста сотрудника)
+                    </p>
+                  </div>
+
+                  <div class="container-for-img">
+                    <img
+                      class="illustration"
+                      src="images/employers-list.png"
+                      alt=""
+                    />
+                    <div class="inner"></div>
+                  </div>
+                </div>
+
+                <div class="box5 box">
+                  <div class="bg"></div>
+                  <div class="details">
+                    <h4>
+                      Коммерческая разработка - сервис по покупке и продаже
+                      криптовалюты SkyLine
+                    </h4>
+                    <p>Проект на <strong>React</strong></p>
+                    <p>Верстка по макету Figma с использованием Material UI</p>
+                    <p>Резиновая и адаптивная верстка</p>
+                    <p>Контролируемые формы</p>
+                    <p>Кастомизированные хуки</p>
+                    <p>Создание запросов GET, POST на сервер REST API</p>
+                    <p>
+                      Проверка заполнения формы для регистрации и авторизации
+                    </p>
+                  </div>
+                  <div class="container-for-img">
+                    <img
+                      class="illustration"
+                      src="images/skyline2.png"
+                      alt=""
+                    />
+                    <div class="inner"></div>
+                  </div>
+                </div>
               </div>
-              <div class="container-for-img">
-                <img class="illustration" src="images/skyline.png" alt="" />
-                <div class="inner"></div>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="prev"
+                width="45"
+                height="45"
+                viewBox="0 0 56.898 91"
+              >
+                <path
+                  d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z"
+                  transform="translate(0 91) rotate(-90)"
+                  fill="#fff"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="next"
+                width="45"
+                height="45"
+                viewBox="0 0 56.898 91"
+              >
+                <path
+                  d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z"
+                  transform="translate(56.898) rotate(90)"
+                  fill="#fff"
+                />
+              </svg>
+              <div class="trail">
+                <div class="box1 active">1</div>
+                <div class="box2">2</div>
+                <div class="box3">3</div>
+                <div class="box4">4</div>
+                <div class="box5">5</div>
               </div>
             </div>
-          </div>
-
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="prev"
-            width="45"
-            height="45"
-            viewBox="0 0 56.898 91"
-          >
-            <path
-              d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z"
-              transform="translate(0 91) rotate(-90)"
-              fill="#fff"
-            />
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="next"
-            width="45"
-            height="45"
-            viewBox="0 0 56.898 91"
-          >
-            <path
-              d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z"
-              transform="translate(56.898) rotate(90)"
-              fill="#fff"
-            />
-          </svg>
-          <div class="trail">
-            <div class="box1 active">1</div>
-            <div class="box2">2</div>
-            <div class="box3">3</div>
-            <div class="box4">4</div>
-            <div class="box5">5</div>
-          </div>
+          </section>
         </div>
-      </section>
 
-      <section id="contact">
-        <h2 class="title-in-section">Контакты</h2>
-        <div class="text-in-section">
-          Свяжитесь со мной: +79274083563 (WhatsApp)
+        <div class="skills">
+          <section id="contact" class="main-container">
+            <h2 class="title-in-skill">Контакты</h2>
+            <div class="skill">Свяжитесь со мной: +79274083563 (WhatsApp)</div>
+            <a class="link" href="https://t.me/arturdr45" target="_blank"
+              >Мой профиль в Телеграме</a
+            >
+          </section>
         </div>
-        <a class="link" href="https://t.me/arturdr45" target="_blank"
-          >Мой профиль в Телеграме</a
-        >
-      </section>
+      </div>
     </main>
 
     <footer class="footer">
-      <div class="text-in-section">&copy; 2023 Артур Ларионов</div>
+      <div class="footer-text">&copy; 2023 Артур Ларионов</div>
     </footer>
 
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
