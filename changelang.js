@@ -8,10 +8,13 @@ function loadLanguageResources() {
       document.getElementById("aboutMe").textContent = data.aboutMe;
       document.getElementById("skills").textContent = data.skills;
       document.getElementById("skills2").textContent = data.skills2;
+      document.getElementById("skills3").textContent = data.skills3;
       document.getElementById("projects").textContent = data.projects;
       document.getElementById("projects2").textContent = data.projects2;
+      document.getElementById("projects3").textContent = data.projects3;
       document.getElementById("contact").textContent = data.contact;
       document.getElementById("contact2").textContent = data.contact2;
+      document.getElementById("contact3").textContent = data.contact3;
       document.getElementById("aboutMe_title").textContent = data.aboutMe_title;
       document.getElementById("aboutMe_miniTitle").textContent =
         data.aboutMe_miniTitle;
