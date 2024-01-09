@@ -7,8 +7,11 @@ function loadLanguageResources() {
       // Замените тексты на странице с использованием данных из файла
       document.getElementById("aboutMe").textContent = data.aboutMe;
       document.getElementById("skills").textContent = data.skills;
+      document.getElementById("skills2").textContent = data.skills2;
       document.getElementById("projects").textContent = data.projects;
+      document.getElementById("projects2").textContent = data.projects2;
       document.getElementById("contact").textContent = data.contact;
+      document.getElementById("contact2").textContent = data.contact2;
       document.getElementById("aboutMe_title").textContent = data.aboutMe_title;
       document.getElementById("aboutMe_miniTitle").textContent =
         data.aboutMe_miniTitle;

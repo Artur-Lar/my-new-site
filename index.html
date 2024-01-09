@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline';">
     <link rel="stylesheet" href="new-slider-styles.css" type="text/css" />
     <link
       rel="stylesheet"
@@ -21,23 +20,23 @@
         </div>
         <ul class="header-nav">
           <li class="header-nav__item">
-            <a class="link-in-nav" href="#about-me" id="aboutMe">Обо мне</a>
+            <a class="link-in-nav" href="#ToAbout-me" id="aboutMe">Обо мне</a>
           </li>
           <li class="header-nav__item">
-            <a class="link-in-nav" href="#skills" id="skills">Навыки</a>
+            <a class="link-in-nav" href="#ToSkills" id="skills">Навыки</a>
           </li>
           <li class="header-nav__item">
-            <a class="link-in-nav" href="#projects" id="projects"
+            <a class="link-in-nav" href="#ToProjects" id="projects"
               >Мои проекты</a
             >
           </li>
           <li class="header-nav__item">
-            <a class="link-in-nav" href="#contact" id="contact">Контакты</a>
+            <a class="link-in-nav" href="#ToContact" id="contact">Контакты</a>
           </li>
         </ul>
         <div class="language-selector">
-          <button onclick="changeLanguage('en')">English</button>
-          <button onclick="changeLanguage('ru')">Русский</button>
+          <button class="langBTN" onclick="changeLanguage('en')"> <img src="images/eng.png" alt="eng"></button>
+          <button class="langBTN" onclick="changeLanguage('ru')"><img src="/images/rus.png" alt="rus"> </button>
         </div>
       </div>
     </header>
@@ -62,7 +61,7 @@
     <main>
       <div>
         <div class="about-me">
-          <section id="about-me" class="main-container">
+          <section id="ToAbout-me" class="main-container">
             <h2 class="title-in-section title-about-me" id="aboutMe_title">
               Привет! Меня зовут Артур
             </h2>
@@ -80,7 +79,7 @@
         </div>
 
         <div class="skills">
-          <section id="skills" class="main-container">
+          <section id="ToSkills" class="main-container">
             <h2 class="title-in-skill" id="skills2">Навыки</h2>
             <div class="list-of-scills">
               <div class="skill">
@@ -157,7 +156,7 @@
         </div>
 
         <div class="skills">
-          <section id="projects" class="slider-container">
+          <section id="ToProjects" class="slider-container">
             <h2 class="title-in-skill" id="projects2">Проекты</h2>
             <div class="container">
               <div class="slider">
@@ -346,7 +345,7 @@
         </div>
 
         <div class="skills">
-          <section id="contact" class="main-container">
+          <section id="ToContact" class="main-container">
             <h2 class="title-in-skill" id="contact2">Контакты</h2>
             <div class="skill" id="contactMe">Свяжитесь со мной: +79274083563 (WhatsApp)</div>
             <a class="link" href="https://t.me/arturdr45" target="_blank" id="tgProfile"
@@ -368,5 +367,30 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.2/CSSRulePlugin.min.js"></script> -->
     <script src="super-slider.js"></script>
     <script src="changelang.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+  // Находим все элементы навигации
+  var navItems = document.querySelectorAll('.link-in-nav');
+
+  // Обработчик события клика на элементах навигации
+  navItems.forEach(function (item) {
+    item.addEventListener('click', function (event) {
+      // Отменяем стандартное поведение ссылки (переход по якорю)
+      event.preventDefault();
+
+      // Получаем значение атрибута href (идентификатор раздела)
+      var targetId = item.getAttribute('href').substring(1);
+
+      // Находим соответствующий раздел
+      var targetSection = document.getElementById(targetId);
+
+      // Плавно прокручиваем к целевому разделу
+      if (targetSection) {
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+});
+    </script>
   </body>
 </html>

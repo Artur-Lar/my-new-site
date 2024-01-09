@@ -43,7 +43,19 @@ body {
 .logo {
   color: #d1e8e2;
 }
-
+.language-selector {
+  display: flex;
+  align-items: center;
+}
+.langBTN {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+.langBTN img {
+  width: 40px;
+}
 .burger-menu {
   display: none;
   cursor: pointer;
@@ -194,9 +206,6 @@ body {
 }
 @media screen and (max-width: 768px) {
 }
-.skill {
-  justify-content: center;
-}
 .projects-slider {
   display: flex;
   overflow: hidden;
@@ -257,6 +266,7 @@ body {
 }
 .footer {
   background-color: #e8f3f7;
+  padding-bottom: 50px;
 }
 .footer-text {
   width: 90%;

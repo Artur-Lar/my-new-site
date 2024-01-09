@@ -19,11 +19,7 @@ body {
   position: relative;
   transition: top 0.3s;
 }
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
+
 .header-nav {
   list-style-type: none;
   display: flex;
